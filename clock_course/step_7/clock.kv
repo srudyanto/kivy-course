@@ -1,0 +1,37 @@
+<MyButton@Button>:
+    font_size: 25
+    bold: True
+    
+<MyLabel@Label>:
+    font_size:60
+    markup: True
+    
+ClockLayout:
+    orientation: 'vertical'
+    time_prop: time
+    sw_prop: stopwatch
+    
+    MyLabel:
+        id: time
+        text: '[b]00[/b]:00:00'
+        
+    BoxLayout:
+        height: 90
+        orientation:'horizontal'
+        padding: 20
+        spacing: 20
+        size_hint: (1,None)
+        
+        MyButton:
+            id: start_stop
+            text: 'Start'
+            on_press: app.start_stop()
+            
+        MyButton:
+            id: reset
+            text: 'Reset'
+            on_press: app.reset()
+            
+    MyLabel:
+        id: stopwatch
+        text: '00:00.[size=40]00[/size]'
