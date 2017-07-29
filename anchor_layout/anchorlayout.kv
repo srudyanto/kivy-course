@@ -1,0 +1,107 @@
+<MyButton@Button>:
+    size_hint: 0.3,0.3
+    
+<container>:
+    cols: 3
+    rows: 3
+    AnchorLayout:
+        anchor_x: 'left'
+        anchor_y: 'top'
+        canvas:
+            Color:
+                rgb:[0,0,0]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: 'R1C1'
+
+    AnchorLayout:
+        anchor_y: 'top'
+        canvas:
+            Color:
+                rgb:[0,0,1]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: 'R1C2'
+            
+    AnchorLayout:
+        anchor_x: 'right'
+        anchor_y: 'top'
+        canvas:
+            Color:
+                rgb:[0,1,0]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: "R1C3"
+            
+    AnchorLayout:
+        anchor_x: 'left'
+        canvas:
+            Color:
+                rgb:[0,1,1]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: "R2C1"
+            
+    AnchorLayout:
+        canvas:
+            Color:
+                rgb:[1,0,0]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: "R2C2"
+            
+    AnchorLayout:
+        anchor_x: 'right'
+        canvas:
+            Color:
+                rgb:[1,0,1]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: "R2C3"
+            
+    AnchorLayout:
+        anchor_x: 'left'
+        anchor_y: 'bottom'
+        canvas:
+            Color:
+                rgb:[1,0,1]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: "R3C1"
+
+    AnchorLayout:
+        anchor_y: 'bottom'
+        canvas:
+            Color:
+                rgb:[1,1,0]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: "R3C2"
+            
+    AnchorLayout:
+        anchor_x: 'right'
+        anchor_y: 'bottom'
+        canvas:
+            Color:
+                rgb:[1,1,1]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        MyButton:
+            text: "R3C3"
